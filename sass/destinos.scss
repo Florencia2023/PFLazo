@@ -1,0 +1,64 @@
+.gridcontainer_destinos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
+}
+
+.main_fondo{
+    background-color: aqua;
+}
+.titulo_1{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    margin-bottom: 1.5cm;
+    margin-top: 1cm;
+}
+.imagenes_destinos{
+   width: 300px;
+   height: 500px; 
+}
+.section_destinos1{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+
+}
+
+.section_destinos2{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+
+}
+.boton_destino{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton_tam{
+    width: 2cm;
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+}
+
+
+
+@media screen and (min-width:400px) {
+    .section_destinos1{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .section_destinos2{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+   
+}

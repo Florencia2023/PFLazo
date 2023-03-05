@@ -1,0 +1,230 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.navbar-nav {
+  font-size: 2rem;
+}
+
+.contenedor {
+  display: flex;
+}
+
+.tamañologo {
+  width: 6cm;
+}
+
+h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.logoinsta {
+  width: 3cm;
+}
+
+.logoface {
+  width: 1.5cm;
+}
+
+.logos_footer {
+  width: 1.3cm;
+}
+
+.contenedor-footer {
+  color: orangered;
+  font-family: "Noto Sans Adlam Unjoined", sans-serif;
+  font-size: 2rem;
+}
+
+footer {
+  background-color: bisque;
+  border-color: orangered;
+  border-top: solid;
+}
+
+#colordetitulo {
+  color: white;
+  font-family: "Noto Sans Adlam Unjoined", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5cm;
+}
+
+.fondoparrafo {
+  background-image: url(https://images.pexels.com/photos/4602279/pexels-photo-4602279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20%;
+  margin: 0;
+  color: white;
+  font-family: "Noto Sans Adlam Unjoined", sans-serif;
+  font-size: large;
+}
+
+.fondobuscador {
+  padding: 3cm;
+  margin: 0cm;
+  background-color: aqua;
+}
+
+.contactanos {
+  margin-left: 1cm;
+  margin-bottom: 1cm;
+  margin-top: 1cm;
+}
+
+.contenedorcontacto {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1cm;
+}
+
+.diviconos {
+  padding-bottom: 1cm;
+}
+
+.gridcontainer_destinos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.main_fondo {
+  background-color: aqua;
+}
+
+.titulo_1 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-family: "Noto Sans Adlam Unjoined", sans-serif;
+  margin-bottom: 1.5cm;
+  margin-top: 1cm;
+}
+
+.imagenes_destinos {
+  width: 300px;
+  height: 500px;
+}
+
+.section_destinos1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section_destinos2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton_destino {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton_tam {
+  width: 2cm;
+  margin-top: 0.5cm;
+  margin-bottom: 0.5cm;
+}
+
+@media screen and (min-width: 400px) {
+  .section_destinos1 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .section_destinos2 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.texto_estudiantil {
+  height: 60vh;
+  background-color: aqua;
+  color: white;
+  padding-top: 2cm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Noto Sans Adlam Unjoined", sans-serif;
+}
+
+.texto_estudiantil1 {
+  font-size: 3rem;
+  width: 70%;
+  margin-top: 1cm;
+  margin-left: 3cm;
+  letter-spacing: 3px;
+}
+
+#container_quinceañeras {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 180px 1fr 150px;
+}
+
+.section_quinceañeras {
+  background-image: url(../img/104611585_2600135540087944_3749305338806301031_n.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 210vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.video_quinceañeras {
+  margin-top: 13.5cm;
+  margin-left: 9cm;
+}
+
+.texto_quinceañeras {
+  text-align: center;
+  color: rgb(247, 148, 112);
+  font-size: 3rem;
+  font-family: "Noto Sans Adlam Unjoined", sans-serif;
+  font-weight: bold;
+  letter-spacing: 5px;
+  width: 25cm;
+  margin-top: 7cm;
+  margin-left: 5cm;
+}
+
+.flex-footer {
+  display: flex;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  border-color: orangered;
+}
+
+.gridcontainer_contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 2fr 0.3fr;
+}
+
+.main_contacto {
+  background-image: url(../img/104273205_2600135940087904_6412063635946630690_n.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.botoncontacto {
+  width: 65%;
+  margin-left: 6cm;
+  margin-top: 2cm;
+}
+
+/*# sourceMappingURL=estilos.css.map */

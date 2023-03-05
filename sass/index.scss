@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+
+}
+.navbar-nav{
+    font-size: 2rem;
+   
+}
+
+.contenedor{
+    display: flex;  
+}
+
+
+.tamañologo{
+    width: 6cm;
+}
+h1{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.logoinsta{
+    width: 3cm;
+}
+
+.logoface{
+    width: 1.5cm;
+}
+
+.logos_footer{
+    width: 1.3cm;
+}
+
+
+.contenedor-footer{
+    color: orangered;
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    font-size: 2rem
+}
+   
+
+
+footer{
+    background-color: bisque;
+    border-color: orangered;
+    border-top: solid;
+}
+
+
+
+
+#colordetitulo {
+    color: white;
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5cm;
+}
+
+
+.fondoparrafo {
+    background-image: url(https://images.pexels.com/photos/4602279/pexels-photo-4602279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:20%;
+    margin:0;
+    color: white;
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    font-size: large;
+}
+
+.fondobuscador{
+    padding: 3cm;
+    margin: 0cm;
+    background-color: aqua;   
+}
+
+
+.contactanos{
+    margin-left: 1cm;
+    margin-bottom: 1cm;
+    margin-top: 1cm;
+}
+
+
+.contenedorcontacto {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 1cm;
+    
+}
+
+
+.diviconos{
+    padding-bottom: 1cm;
+}

@@ -1,0 +1,38 @@
+#container_quinceañeras{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 1fr 150px;
+    }
+    .section_quinceañeras{
+        background-image: url(../img/104611585_2600135540087944_3749305338806301031_n.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        height: 210vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .video_quinceañeras{
+        margin-top: 13.5cm;
+        margin-left: 9cm;
+    }
+    
+    .texto_quinceañeras{
+        text-align: center;
+        color: rgb(247, 148, 112);
+        font-size: 3rem;
+        font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+        font-weight: bold;
+        letter-spacing: 5px;
+        width: 25cm;
+        margin-top: 7cm;
+        margin-left: 5cm;
+    }
+    .flex-footer{
+        display: flex;
+        height: 150px;
+        align-items: center;
+       justify-content: center;
+       border-color: orangered;
+    }
+    

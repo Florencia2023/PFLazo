@@ -1,0 +1,22 @@
+.gridcontainer_contacto{ 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 2fr 0.3fr;
+
+}
+
+.main_contacto{
+    background-image: url(../img/104273205_2600135940087904_6412063635946630690_n.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+
+
+.botoncontacto{
+    width: 65%;
+  margin-left: 6cm;
+  margin-top: 2cm;
+  
+}
+
