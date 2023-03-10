@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -16,14 +17,50 @@ html{
     display: flex;  
 }
 
-
 .tamañologo{
     width: 6cm;
 }
-h1{
-    text-align: center;
-    font-size: xx-large;
+
+.fondobuscador{
+    padding: 3cm;
+    margin: 0cm;
+    background-color: aqua;   
+}
+
+
+#colordetitulo {
+    color: white;
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5cm;
+}
+
+.fondoparrafo {
+    background-image: url(https://images.pexels.com/photos/4602279/pexels-photo-4602279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+    
+}
+
+.titulo_index{
+    font-size: 4rem;
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    color: white;
     font-weight: bold;
+    overflow: hidden;
+    margin-top: 5cm;
+}
+.texto_inicio{
+    font-size: 2rem;
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    color: white;
+    margin-top: 3cm;
+    overflow: hidden;
+    width: 80%;
 }
 
 .logoinsta{
@@ -42,46 +79,14 @@ h1{
 .contenedor-footer{
     color: orangered;
     font-family: 'Noto Sans Adlam Unjoined', sans-serif;
-    font-size: 2rem
+    font-size: 2rem;
 }
-   
-
 
 footer{
     background-color: bisque;
     border-color: orangered;
     border-top: solid;
 }
-
-
-
-
-#colordetitulo {
-    color: white;
-    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 1.5cm;
-}
-
-
-.fondoparrafo {
-    background-image: url(https://images.pexels.com/photos/4602279/pexels-photo-4602279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding:20%;
-    margin:0;
-    color: white;
-    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
-    font-size: large;
-}
-
-.fondobuscador{
-    padding: 3cm;
-    margin: 0cm;
-    background-color: aqua;   
-}
-
 
 .contactanos{
     margin-left: 1cm;
@@ -102,3 +107,8 @@ footer{
 .diviconos{
     padding-bottom: 1cm;
 }
+
+
+
+
+

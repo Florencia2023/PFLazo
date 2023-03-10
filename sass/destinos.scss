@@ -1,3 +1,5 @@
+@use'./variables.scss';
+
 .gridcontainer_destinos{
     display: grid;
     grid-template-columns: 1fr;
@@ -9,11 +11,11 @@
 }
 
 .main_fondo{
-    background-color: aqua;
+    background-color: variables.$color_fondo;
 }
 .titulo_1{
     text-align: center;
-    color: white;
+    color: variables.$color_titulo;
     font-size: 2rem;
     font-family: 'Noto Sans Adlam Unjoined', sans-serif;
     margin-bottom: 1.5cm;
@@ -48,9 +50,7 @@
     margin-bottom: 0.5cm;
 }
 
-
-
-@media screen and (min-width:400px) {
+@media screen and (min-width:920px) {
     .section_destinos1{
         flex-direction: row;
         justify-content: space-around;
