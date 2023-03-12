@@ -108,16 +108,16 @@ footer {
 }
 
 .main_fondo {
-  background-color: aqua;
+  background-color: white;
 }
 
 .titulo_1 {
   text-align: center;
-  color: white;
+  color: aqua;
   font-size: 2rem;
   font-family: "Noto Sans Adlam Unjoined", sans-serif;
-  margin-bottom: 1.5cm;
   margin-top: 1cm;
+  margin-bottom: 1.5cm;
 }
 
 .imagenes_destinos {
@@ -149,7 +149,7 @@ footer {
   margin-bottom: 0.5cm;
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 768px) {
   .section_destinos1 {
     flex-direction: row;
     justify-content: space-around;
@@ -161,8 +161,8 @@ footer {
 }
 .texto_estudiantil {
   height: 60vh;
-  background-color: aqua;
-  color: white;
+  background-color: white;
+  color: aqua;
   padding-top: 2cm;
   display: flex;
   flex-direction: column;
@@ -182,36 +182,61 @@ footer {
   width: 100%;
 }
 
-#container_quinceañeras {
+.section_quinceañeras {
+  background-color: white;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 180px 1fr 150px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "imagen_disney texto_disney" "video_quinceañeras img_mickey";
+  overflow: hidden;
 }
 
-.section_quinceañeras {
-  background-image: url(../img/104611585_2600135540087944_3749305338806301031_n.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  height: 210vh;
-  display: flex;
-  flex-direction: column;
+.imagen_disney {
+  grid-area: imagen_disney;
+  margin-top: 2cm;
+}
+
+.tamaño_img {
+  width: 95%;
+  margin-left: 0.5cm;
+}
+
+.texto_disney {
+  grid-area: texto_disney;
+  text-align: center;
+  color: orangered;
+  font-size: 2.5rem;
+  font-family: "Noto Sans Adlam Unjoined", sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-top: 5cm;
+  background-color: bisque;
+  margin-right: 0.5cm;
+  border-style: solid;
+  border-color: orangered;
+  border-width: 3px;
 }
 
 .video_quinceañeras {
-  margin-top: 13.5cm;
-  margin-left: 9cm;
+  grid-area: video_quinceañeras;
+  margin-top: 1cm;
+  margin-left: 1.5cm;
+  margin-bottom: 2cm;
 }
 
-.texto_quinceañeras {
-  text-align: center;
-  color: rgb(247, 148, 112);
-  font-size: 3rem;
-  font-family: "Noto Sans Adlam Unjoined", sans-serif;
-  font-weight: bold;
-  letter-spacing: 5px;
-  width: 25cm;
-  margin-top: 7cm;
-  margin-left: 5cm;
+.img_mickey {
+  grid-area: img_mickey;
+  transition: all 0.3s ease-in-out;
+}
+
+.img_mickey:hover {
+  transform: scale(1.3);
+  transform-origin: center center;
+}
+
+.img_mickeym {
+  margin-bottom: 2.5cm;
+  margin-left: 1cm;
 }
 
 .flex-footer {
@@ -219,9 +244,57 @@ footer {
   height: 150px;
   align-items: center;
   justify-content: center;
-  border-color: orangered;
+  border-color: aqua;
+  background-color: aqua;
 }
 
+.logoface {
+  width: 2cm;
+  height: 2cm;
+}
+
+.logoinsta {
+  width: 2cm;
+  height: 2cm;
+}
+
+@media screen and (max-width: 768px) {
+  .section_quinceañeras {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "imagen_disney" "texto_disney" "video_quinceañeras";
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .texto_disney {
+    width: 65%;
+    margin-top: 2cm;
+    margin-left: 2cm;
+  }
+  .imagen_disney {
+    width: 70%;
+    margin-top: 2.5cm;
+    margin-left: 1.7cm;
+    margin-right: 2cm;
+  }
+  .video_quinceañeras {
+    margin-right: 1.9cm;
+  }
+  .tamaño_video {
+    width: 100%;
+  }
+  .flex-footer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .img_mickey {
+    display: none;
+  }
+}
 .gridcontainer_contacto {
   display: grid;
   grid-template-columns: 1fr;

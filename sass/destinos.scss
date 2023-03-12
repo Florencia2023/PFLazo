@@ -1,5 +1,15 @@
 @use'./variables.scss';
 
+@mixin margin ($margintop, $marginbottom){
+    margin-top: $margintop;
+    margin-bottom: $marginbottom;
+}
+
+@mixin tamanos ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
 .gridcontainer_destinos{
     display: grid;
     grid-template-columns: 1fr;
@@ -7,23 +17,20 @@
     "header"
     "main"
     "footer";
-
 }
 
 .main_fondo{
-    background-color: variables.$color_fondo;
+    background-color: variables.$color_titulo;
 }
 .titulo_1{
     text-align: center;
-    color: variables.$color_titulo;
+    color: variables.$color_fondo;
     font-size: 2rem;
     font-family: 'Noto Sans Adlam Unjoined', sans-serif;
-    margin-bottom: 1.5cm;
-    margin-top: 1cm;
+   @include margin(1cm, 1.5cm);
 }
 .imagenes_destinos{
-   width: 300px;
-   height: 500px; 
+  @include tamanos(300px, 500px);
 }
 .section_destinos1{
     display: flex;
@@ -46,11 +53,10 @@
 
 .boton_tam{
     width: 2cm;
-    margin-top: 0.5cm;
-    margin-bottom: 0.5cm;
+   @include margin(0.5cm, 0.5cm);
 }
 
-@media screen and (min-width:920px) {
+@media screen and (min-width:768px) {
     .section_destinos1{
         flex-direction: row;
         justify-content: space-around;
