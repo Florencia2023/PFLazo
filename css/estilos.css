@@ -42,8 +42,7 @@ html {
   align-items: center;
   height: 1000px;
 }
-
-.titulo_index {
+.fondoparrafo .titulo_index {
   font-size: 4rem;
   font-family: "Noto Sans Adlam Unjoined", sans-serif;
   color: white;
@@ -51,54 +50,13 @@ html {
   overflow: hidden;
   margin-top: 5cm;
 }
-
-.texto_inicio {
+.fondoparrafo .texto_inicio {
   font-size: 2rem;
   font-family: "Noto Sans Adlam Unjoined", sans-serif;
   color: white;
   margin-top: 3cm;
   overflow: hidden;
   width: 80%;
-}
-
-.logoinsta {
-  width: 3cm;
-}
-
-.logoface {
-  width: 1.5cm;
-}
-
-.logos_footer {
-  width: 1.3cm;
-}
-
-.contenedor-footer {
-  color: orangered;
-  font-family: "Noto Sans Adlam Unjoined", sans-serif;
-  font-size: 2rem;
-}
-
-footer {
-  background-color: bisque;
-  border-color: orangered;
-  border-top: solid;
-}
-
-.contactanos {
-  margin-left: 1cm;
-  margin-bottom: 1cm;
-  margin-top: 1cm;
-}
-
-.contenedorcontacto {
-  display: flex;
-  flex-direction: column;
-  margin-left: 1cm;
-}
-
-.diviconos {
-  padding-bottom: 1cm;
 }
 
 .gridcontainer_destinos {
@@ -110,8 +68,7 @@ footer {
 .main_fondo {
   background-color: white;
 }
-
-.titulo_1 {
+.main_fondo .titulo_1 {
   text-align: center;
   color: aqua;
   font-size: 2rem;
@@ -120,15 +77,24 @@ footer {
   margin-bottom: 1.5cm;
 }
 
-.imagenes_destinos {
-  width: 300px;
-  height: 500px;
-}
-
 .section_destinos1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.section_destinos1 .boton_destino {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section_destinos1 .boton_destino .imagenes_destinos {
+  width: 300px;
+  height: 500px;
+}
+.section_destinos1 .boton_destino .boton_tam {
+  width: 2cm;
+  margin-top: 0.5cm;
+  margin-bottom: 0.5cm;
 }
 
 .section_destinos2 {
@@ -136,14 +102,16 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-
-.boton_destino {
+.section_destinos2 .boton_destino {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.boton_tam {
+.section_destinos2 .boton_destino .imagenes_destinos {
+  width: 300px;
+  height: 500px;
+}
+.section_destinos2 .boton_destino .boton_tam {
   width: 2cm;
   margin-top: 0.5cm;
   margin-bottom: 0.5cm;
@@ -269,13 +237,11 @@ footer {
   border-color: aqua;
   background-color: aqua;
 }
-
-.logoface {
+.flex-footer .logoface {
   width: 2cm;
   height: 2cm;
 }
-
-.logoinsta {
+.flex-footer .logoinsta {
   width: 2cm;
   height: 2cm;
 }
@@ -345,7 +311,8 @@ footer {
 .contactanos {
   grid-area: contactanos;
   margin-top: 2cm;
-  margin-right: 1cm;
+  margin-left: 2cm;
+  width: 80%;
 }
 
 .titulo_contacto {
@@ -355,12 +322,26 @@ footer {
   font-weight: bold;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .main_contacto {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-area: "donde_estamos contactanos";
+    grid-template-areas: "donde_estamos" "contactanos";
+  }
+  .contactanos {
+    width: 60%;
+    margin-left: 2cm;
+  }
+  iframe {
+    width: 300px;
+    height: 300px;
+  }
+  .titulo_mapa {
+    margin-left: 1.5cm;
+  }
+  .titulo_contacto {
+    margin-left: 1.5cm;
   }
 }
 

@@ -1,3 +1,4 @@
+@use './variables.scss';
 
 *{
     margin: 0;
@@ -24,13 +25,12 @@ html{
 .fondobuscador{
     padding: 3cm;
     margin: 0cm;
-    background-color: aqua;   
+    background-color: variables.$color_fondo;   
 }
 
-
 #colordetitulo {
-    color: white;
-    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    color: variables.$color_titulo;
+    font-family: variables.$font_family;
     font-size: 1.5rem;
     margin-bottom: 1.5cm;
 }
@@ -43,71 +43,23 @@ html{
     flex-direction: column;
     align-items: center;
     height: 1000px;
-    
+    .titulo_index{
+        font-size: 4rem;
+        font-family: variables.$font_family;
+        color: white;
+        font-weight: bold;
+        overflow: hidden;
+        margin-top: 5cm;
+    }
+    .texto_inicio{
+        font-size: 2rem;
+        font-family: variables.$font_family;
+        color: white;
+        margin-top: 3cm;
+        overflow: hidden;
+        width: 80%;
+    }
 }
-
-.titulo_index{
-    font-size: 4rem;
-    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
-    color: white;
-    font-weight: bold;
-    overflow: hidden;
-    margin-top: 5cm;
-}
-.texto_inicio{
-    font-size: 2rem;
-    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
-    color: white;
-    margin-top: 3cm;
-    overflow: hidden;
-    width: 80%;
-}
-
-.logoinsta{
-    width: 3cm;
-}
-
-.logoface{
-    width: 1.5cm;
-}
-
-.logos_footer{
-    width: 1.3cm;
-}
-
-
-.contenedor-footer{
-    color: orangered;
-    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
-    font-size: 2rem;
-}
-
-footer{
-    background-color: bisque;
-    border-color: orangered;
-    border-top: solid;
-}
-
-.contactanos{
-    margin-left: 1cm;
-    margin-bottom: 1cm;
-    margin-top: 1cm;
-}
-
-
-.contenedorcontacto {
-
-    display: flex;
-    flex-direction: column;
-    margin-left: 1cm;
-    
-}
-
-
-.diviconos{
-    padding-bottom: 1cm;
-}
-
 
 
 

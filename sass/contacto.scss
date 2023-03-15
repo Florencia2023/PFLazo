@@ -1,5 +1,14 @@
 @use'../sass/variables.scss';
 
+@mixin tamanos ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+@mixin margin ($margintop, $marginleft){
+    margin-top: $margintop;
+    margin-left: $marginleft;
+}
+
 .main_contacto{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -9,40 +18,55 @@
     background-image: url(../img/104273205_2600135940087904_6412063635946630690_n.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    width: 100%;
-    height: 1000px;
+    @include tamanos(100%, 1000px );
 }
 
 .donde_estamos{
     grid-area: donde_estamos;
-    margin-top: 2cm;
-    margin-left: 1cm;
+    @include margin(2cm, 1cm);
 }
 
 .titulo_mapa{
     margin-bottom: 1cm;
-    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    font-family: variables.$font_family;
     color: variables.$color_titulo;
     font-weight: bold;
 }
 .contactanos{
     grid-area: contactanos;
-    margin-top: 2cm;
-    margin-right: 1cm;
+   @include margin(2cm, 2cm);
+    width: 80%;
 }
 .titulo_contacto{
     margin-bottom: 1cm;
-    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    font-family: variables.$font_family;
     color: variables.$color_titulo;
     font-weight: bold;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (max-width:768px) {
     .main_contacto{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-area: 
-        "donde_estamos contactanos";
+        grid-template-areas: 
+        "donde_estamos"
+        "contactanos";
     }
+
+    .contactanos{
+        width: 60%;
+        margin-left: 2cm;
+    }
+    
+    iframe{
+        @include tamanos(300px, 300px );
+    }
+    .titulo_mapa{
+        margin-left: 1.5cm;
+    }
+    .titulo_contacto{
+        margin-left: 1.5cm;
+    }
+    
 }

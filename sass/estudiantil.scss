@@ -11,7 +11,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+   font-family: variables.$font_family;
    font-size: 3rem;
    letter-spacing: variables.$letter_spacing;
    width: 90%;
