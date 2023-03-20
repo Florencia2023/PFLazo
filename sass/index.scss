@@ -26,13 +26,12 @@ html{
     padding: 3cm;
     margin: 0cm;
     background-color: variables.$color_fondo;   
-}
-
-#colordetitulo {
-    color: variables.$color_titulo;
-    font-family: variables.$font_family;
-    font-size: 1.5rem;
-    margin-bottom: 1.5cm;
+        #colordetitulo {
+            color: variables.$color_titulo;
+            font-family: variables.$font_family;
+            font-size: 1.5rem;
+            margin-bottom: 1.5cm;
+        }
 }
 
 .fondoparrafo {

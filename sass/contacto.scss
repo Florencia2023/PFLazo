@@ -19,30 +19,40 @@
     background-repeat: no-repeat;
     background-position: center center;
     @include tamanos(100%, 1000px );
+
+    .donde_estamos{
+        grid-area: donde_estamos;
+        @include margin(2cm, 1cm);
+    }
+    
+    .titulo_mapa{
+        margin-bottom: 1cm;
+        font-family: variables.$font_family;
+        color: variables.$color_titulo;
+        font-weight: bold;
+    }
+    .contactanos{
+        grid-area: contactanos;
+       @include margin(2cm, 2cm);
+        width: 80%;
+        .titulo_contacto{
+            margin-bottom: 1cm;
+            font-family: variables.$font_family;
+            color: variables.$color_titulo;
+            font-weight: bold;
+        }
+        .titulo_contacto{
+            margin-bottom: 1cm;
+            font-family: variables.$font_family;
+            color: variables.$color_titulo;
+            font-weight: bold;
+        }
+    }
 }
 
-.donde_estamos{
-    grid-area: donde_estamos;
-    @include margin(2cm, 1cm);
-}
 
-.titulo_mapa{
-    margin-bottom: 1cm;
-    font-family: variables.$font_family;
-    color: variables.$color_titulo;
-    font-weight: bold;
-}
-.contactanos{
-    grid-area: contactanos;
-   @include margin(2cm, 2cm);
-    width: 80%;
-}
-.titulo_contacto{
-    margin-bottom: 1cm;
-    font-family: variables.$font_family;
-    color: variables.$color_titulo;
-    font-weight: bold;
-}
+
+
 
 @media screen and (max-width:768px) {
     .main_contacto{
